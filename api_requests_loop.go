@@ -23,7 +23,7 @@ type Result struct {
 
 func main() {
 	for i := 1; i <= 254; i++ {
-		concatenated := fmt.Sprint("{{url}}/ci/?per_page=70&page=1&status=OPE&show_ip=1&search=10.201.245.", i)
+		concatenated := fmt.Sprint("{{url}}", i)
 		call(concatenated, "GET")
 	}
 }
